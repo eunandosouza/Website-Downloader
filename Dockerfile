@@ -30,10 +30,10 @@ COPY entrypoint.sh /app/entrypoint.sh
 RUN chmod +x /app/entrypoint.sh
 
 # Set default PORT environment variable
-ENV PORT=8080
+ENV PORT=9080
 
 # Expose port (Railway/Render will set $PORT)
-EXPOSE 8080
+EXPOSE 9080
 
 # Use shell form to ensure proper variable expansion
 CMD ["/bin/bash", "/app/entrypoint.sh"]
